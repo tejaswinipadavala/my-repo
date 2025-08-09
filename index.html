@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Creative Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #fefefe;
+        }
+        header {
+            background-color: #4CAF50;
+            padding: 20px;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+        }
+        main {
+            padding: 30px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #ff6600;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #e65c00;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌟 My Awesome Idea 🌟</h1>
+    </header>
+
+    <main>
+        <p>This page is designed based on my own thoughts and creativity!</p>
+        <p>Click the button to see some magic ✨</p>
+        <button onclick="showMessage()">Show Message</button>
+        <p id="message" style="margin-top:20px; font-weight: bold; color: #4CAF50;"></p>
+    </main>
+
+    <footer>
+        <p>Created by Me ❤️</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            const ideas = [
+                "Dream big and make it happen!",
+                "Every day is a new chance 🌞",
+                "Believe in yourself 💪",
+                "Creativity is intelligence having fun 🎨"
+            ];
+            document.getElementById("message").innerText = 
+                ideas[Math.floor(Math.random() * ideas.length)];
+        }
+    </script>
+
+</body>
+</html>
